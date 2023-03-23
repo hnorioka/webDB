@@ -13,7 +13,7 @@ from django.db import models
 class Airport(models.Model):
     code = models.CharField(max_length=3)
     city = models.CharField(max_length=64)
-2111e
+
     def __str__(self):
         return f"{self.city} ({self.code})"
     
